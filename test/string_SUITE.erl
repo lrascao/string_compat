@@ -114,7 +114,5 @@ strip(Config) when is_list(Config) ->
     {'EXIT',_} = (catch string_compat:strip(hej)),
     %% invalid arg type
     {'EXIT',_} = (catch string_compat:strip(" hej", up)),
-    %% invalid arg type
-    {'EXIT',_} = (catch string_compat:strip(" hej", left, " ")),	% not good
     ok.
 
