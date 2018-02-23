@@ -1,0 +1,14 @@
+language: erlang
+otp_release:
+  - 20.0
+  - 19.3
+  - 18.3
+  - 17.5
+  - R16B03-1
+install:
+  - make
+script:
+  - make test
+  - make xref
+  - make dialyzer
+sudo: false
